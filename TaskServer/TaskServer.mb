@@ -1,0 +1,73 @@
+# Multi-threaded Task Processing Server / Сервер обробки задач з багатопоточністю
+
+---
+
+## 🇺🇦 Українська
+
+Цей проєкт демонструє **багатопоточну систему обробки задач** на C++ з використанням **ThreadPool**, **черги задач**, **логування** та чистої архітектури.
+
+### Особливості
+- Потокобезпечна черга задач (`TaskQueue`)
+- ThreadPool для виконання задач у кількох потоках
+- Логування через `Logger`
+- Вбудована модель задач `Task` з типом та payload
+- Легка архітектура, готова для масштабування
+
+### Структура проєкту
+ТаskServer/
+├── core/
+│   ├── Task.h
+│   ├── TaskQueue.h
+│   ├── TaskQueue.cpp
+│   ├── ThreadPool.h
+│   ├── ThreadPool.cpp
+├── utils/
+│   ├── Logger.h
+│   ├── Logger.cpp
+├── main.cpp
+
+### Як зібрати
+```bash
+clang++ -std=c++17 \
+main.cpp \
+core/TaskQueue.cpp \
+core/ThreadPool.cpp \
+utils/Logger.cpp \
+-o TaskServer
+
+Як запустити
+./TaskServer
+
+🇬🇧 English
+
+This project demonstrates a multi-threaded task processing system in C++ using a ThreadPool, task queue, logging, and clean architecture.
+
+Features
+	•	Thread-safe task queue (TaskQueue)
+	•	ThreadPool executing tasks in multiple threads
+	•	Logging via Logger
+	•	Task model (Task) with type and payload
+	•	Lightweight and modular architecture, easy to scale
+Project Structure
+TaskServer/
+├── core/
+│   ├── Task.h
+│   ├── TaskQueue.h
+│   ├── TaskQueue.cpp
+│   ├── ThreadPool.h
+│   ├── ThreadPool.cpp
+├── utils/
+│   ├── Logger.h
+│   ├── Logger.cpp
+├── main.cpp
+
+How to Build
+clang++ -std=c++17 \
+main.cpp \
+core/TaskQueue.cpp \
+core/ThreadPool.cpp \
+utils/Logger.cpp \
+-o TaskServer
+
+How to Run
+./TaskServer

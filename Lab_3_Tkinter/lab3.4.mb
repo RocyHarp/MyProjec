@@ -1,0 +1,10 @@
+“Lab 3.4: Quiz Application in Python (Tkinter)
+A GUI-based quiz program where users enter their surname and group, 
+answer multiple-choice and open-ended questions, and receive a score.
+The interface includes a scrollable quiz area and buttons to submit or clear responses.”
+
+Українською:
+“Лабораторна робота 3.4: Тест на Python (Tkinter)
+Графічний додаток для тестування, де користувачі вводять прізвище та групу,
+відповідають на питання з вибором та відкриті, і отримують підсумковий бал. 
+Інтерфейс включає прокручувану область тесту та кнопки для відправки або очищення відповідей.”

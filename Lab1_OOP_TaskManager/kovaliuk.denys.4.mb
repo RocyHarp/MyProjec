@@ -1,0 +1,48 @@
+# Лабораторна 1: Менеджер завдань (OOP) / Lab 1: Task Manager (OOP)
+
+---
+
+
+Цей проект – університетська лабораторна робота на C++, яка демонструє основи **об’єктно-орієнтованого програмування (ООП)** та обробки подій.
+
+### Особливості
+- Додавання завдань з назвою та терміном виконання
+- Позначення завдань як виконаних
+- Видалення завдань
+- Відображення списку завдань з їх статусом
+
+### Структура
+- `kovaliuk.denys.4.cpp` — основний C++ файл, що містить:
+  - `Task` struct
+  - `TaskEvent` та `ITaskEventListener` для обробки подій
+  - `EventBus` для керування повідомленнями про події
+  - `TaskManager` для виконання операцій над завданнями
+  - Інтерактивне консольне меню для тестування
+
+### Як запустити
+1. Скомпілюйте програму:
+```bash
+g++ -std=c++17 kovaliuk.denys.4.cpp -o TaskManager
+
+# Lab1: OOP Task Manager
+
+This is a university lab project developed in C++ demonstrating basic **Object-Oriented Programming (OOP)** principles and event-driven design.
+
+## Features
+- Add tasks with a title and due date
+- Mark tasks as completed
+- Delete tasks
+- Display the list of tasks with status
+
+## Structure
+- `kovaliuk.denys.4.cpp` — main C++ file containing:
+  - `Task` struct
+  - `TaskEvent` and `ITaskEventListener` for event handling
+  - `EventBus` for managing event notifications
+  - `TaskManager` class implementing task operations
+  - Interactive console menu for testing
+
+## How to run
+1. Compile the program:
+```bash
+g++ -std=c++17 kovaliuk.denys.4.cpp -o TaskManager

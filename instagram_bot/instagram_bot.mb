@@ -1,0 +1,98 @@
+# 🤖 AI Instagram Auto-Poster
+
+<p align="center">
+  <a href="#-українська">🇺🇦 <b>Читати українською</b></a> |
+  <a href="#-english">🇬🇧 <b>Read in English</b></a>
+</p>
+
+---
+
+## 🇺🇦 Українська
+
+**AI Instagram Auto-Poster** — це Python-бот, який автоматично створює та публікує естетичні пости в Instagram. Він завантажує випадкове якісне зображення, генерує креативний опис за допомогою Google Gemini AI та публікує все це у вашому профілі.
+
+### ✨ Особливості
+* **ШІ-генерація:** Використовує `Google Gemini 1.5 Flash` для створення унікальних описів англійською мовою з хештегами.
+* **Авто-контент:** Завантажує випадкові високоякісні фото з сервісу Picsum.
+* **Безпека:** Використовує змінні середовища (`.env`) для захисту ключів API.
+* **Розумна авторизація:** Вхід через `Session ID` (без пароля) та збереження сесії для уникнення блокувань.
+
+### 🛠️ Встановлення
+
+1.  **Клонуйте репозиторій:**
+    ```bash
+    git clone [https://github.com/yourusername/insta-ai-bot.git](https://github.com/yourusername/insta-ai-bot.git)
+    cd insta-ai-bot
+    ```
+
+2.  **Встановіть залежності:**
+    ```bash
+    pip install -r requirements.txt
+    ```
+
+### ⚙️ Налаштування
+
+1.  Створіть файл `.env` у кореневій папці проєкту.
+2.  Додайте туди ваші дані (без пробілів біля `=`):
+
+    ```ini
+    GEMINI_API_KEY=Ваш_Ключ_Gemini
+    INSTA_SESSION_ID=Ваш_Instagram_Session_ID
+    ```
+
+> **Як отримати Session ID?**
+> 1. Зайдіть в Instagram через браузер (Chrome/Edge).
+> 2. Натисніть `F12` -> вкладка `Application` -> зліва `Cookies` -> `https://www.instagram.com`.
+> 3. Знайдіть рядок `sessionid` і скопіюйте його значення (`Value`).
+
+### 🚀 Запуск
+```bash
+python main.py
+
+⚠️ Відмова від відповідальності
+Цей код створено виключно для освітніх цілей. Використання ботів може порушувати правила спільноти Instagram. 
+Автор не несе відповідальності за можливе блокування акаунту.
+
+
+🇬🇧 English
+AI Instagram Auto-Poster is a Python bot designed to automate aesthetic Instagram posts. It fetches a random high-quality image, generates an engaging caption using Google Gemini AI, and posts it directly to your feed.
+
+✨ Features
+
+AI Content Generation: Uses Google Gemini 1.5 Flash to write short, aesthetic captions with relevant hashtags.
+
+Auto-Content: Fetches random high-quality images from Picsum.
+
+Security: Uses environment variables (.env) to keep your API keys safe.
+
+Smart Auth: Logs in using Session ID (no password needed) and caches session settings to prevent account flags.
+
+🛠️ Installation
+
+Clone the repository:
+git clone [https://github.com/yourusername/insta-ai-bot.git](https://github.com/yourusername/insta-ai-bot.git)
+cd insta-ai-bot
+2.Install dependencies:
+pip install -r requirements.txt
+
+⚙️ Configuration
+
+Create a .env file in the root directory.
+
+Add your credentials (no spaces around =):
+GEMINI_API_KEY=Your_Gemini_Key
+INSTA_SESSION_ID=Your_Instagram_Session_ID
+How to get Session ID?
+
+Log in to Instagram on your browser (Chrome/Edge).
+
+Press F12 -> go to Application tab -> Cookies (left sidebar) -> https://www.instagram.com.
+
+Find sessionid and copy its Value.
+
+🚀 Usage
+python main.py
+⚠️ Disclaimer
+
+This project is for educational purposes only. Using automated bots may violate Instagram's Terms of Service. 
+The author is not responsible for any account bans or restrictions.
